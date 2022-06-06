@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+.sky{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation: shake linear 2s infinite;
+}
+.sun{
+    background-image: url(unnamed-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 45vh;
+    position: absolute;
+    left: %;
+    top: vh;
+}
+.trees{
+    background-image: url(trees.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -30vh;
+}
+.track{
+    background-image: url(track.png);
+    background-repeat: repeat-x;
+    background-size: ;
+    width: 1000%;
+    height: 30vh;
+    position: absolute;
+    top: 70vh;
+    animation: trackmove linear 13s infinite; 
+}
+.car{
+    background-image: url(car_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 25%;
+    height: 15vh;
+    left: 34%;
+    top: 75vh;
+    animation: carshake linear .9s infinite;
+}
+.left_wheel{
+    width: 20%;
+    height: 10vh;
+    background-image: url(car_wheel_right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 11.3%;
+    top: 5.7vh;
+    animation: wheelrotation linear .3s infinite;
+
+}
+.right_wheel{
+    width: 60px;
+    height: 10vh;
+    background-image: url("car_wheel_right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 62.6%;
+    top: 6.3vh;
+    animation: wheelrotation linear .3s infinite;
+}
+@keyframes wheelrotation {
+    100%{transform: rotate(360deg);}
+}
+@keyframes trackmove {
+    100%{transform: translateX(-500vw);}
+}
+@keyframes carshake {
+    0%{transform: translateY(-3px);}
+    50%{transform: translateY(3px);}
+    100%{transform: translateY(-3px);}
+}
+@keyframes shake {
+    0%{transform: translateY(2px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(2px);}
+}
